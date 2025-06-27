@@ -25,5 +25,12 @@ int main(){
   // else {
     // std:: cout << "the temperature is bad";
   //}
+  
+  // if(!sunny){
+  // std:: cout << "it is cloudy outside";
+//}
+  // else {
+   // std:: cout << "it is sunny outside";
+  //}
   return 0;
 }
