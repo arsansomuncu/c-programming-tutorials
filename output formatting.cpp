@@ -100,22 +100,47 @@ std::cout << "double_var: " << double_var << std:endl;
 
 std::cout << std::endl;
 
-  
+// fixed & scientific : for floating point numbers
 
+double a = 1.2354329403560537;
+double b = 2006.0;
+double c = 1.34e - 10;
 
+std::cout << std::endl;
+std::cout << "double values (default: use scientific when necessary)" << std::endl;
+std::cout.unsetf(std::ios::scientific | std::ios::fixed); // hack
+std::cout << "a: " << a << std::endl;
+std::cout << "b: " << b << std::endl;
+std::cout << "c: " << c << sd::endl;
 
+// number of printed out digits for a floating point number
+double a;
+a = 1.23548349759262;
+std::cout << std::endl;
+std::cout << "a (default precision (6)): " << a << std::endl;
+std::cout << std::setprecision(10);
+std::cout << "a (precision(10)): " << a << std::endl;
+std::cout << std::setprecision(20);
+std::cout << "a (precision(20)): " << a << std::endl;
 
+// show trailing zeros if necessary & force output of the decimal point
+double d = 34.1;
+double e = 101.99;
+double f = 12.0;
+int g = 45;
 
+std::cout << std::endl;
+std::cout << "noshowpoint(default): " << std::endl;
+std::cout << "d: " << d << std::endl;
+std::cout << "e: " << e << std::endl;
+std::cout << "f: " << f << std::endl;
+std::cout << "g: " << g << std::endl;
 
-
-
-
-
-
-
-
-
-
+std::cout << s(const char[12]) "showpoint: " << std::endl;
+std::cout << "d: " << d << std::endl;
+std::cout << "e: " << e << std::endl;
+std::cout << "f: " << f << std::endl;
+std::cout << "g: " << g << std::endl;
 
 
 
